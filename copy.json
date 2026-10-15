@@ -1,0 +1,160 @@
+{
+ "blocks": {
+  "p1": {
+   "What it is": {
+    "lead": "An Excel workbook for each department, six tabs, listing every task that department does, the skills each of those tasks needs, and where each employee stands on those skills.",
+    "bullets": [
+     "Skills are things a person can do anywhere, like reading a tape measure, and tasks are the specific jobs in one department that use those skills.",
+     "It prints as a review sheet the lead marks up by hand, which is how the scoring happens."
+    ]
+   },
+   "What I did": {
+    "lead": "The design is mine and the execution is automated, and I run the lead reviews myself.",
+    "bullets": [
+     "I drive those meetings, and we keep working a definition until it is worded the way the lead would say it on the floor, which for some departments has meant nine drafts so far",
+     "Every lead describes the same task in their own words, and sitting down with each of them is the only way you ever find that out",
+     "Claude generates the workbooks, renders the printable review sheets and applies each lead's edit batches, with the standards packaged into custom skills so the tooling comes out conforming by default"
+    ]
+   },
+   "Challenges": {
+    "lead": "Fifteen departments were naming the same capability four different ways, which makes comparing any two of them meaningless.",
+    "bullets": [
+     "One shared library that every department has to draw its skill names from",
+     "Promoting a skill into it breaks the numbering in every workbook that carried it privately, so each needs a fresh draft and a reprinted review sheet, and none of it arrives in a neat order. I kept all fifteen in step."
+    ]
+   },
+   "Results": {
+    "lead": "Fifteen departments now have a working tracker, covering 440 defined tasks and 1,123 skill-to-task connections against a shared library of 362 skills.",
+    "bullets": [
+     "All fifteen are signed off",
+     "The build standard and the tooling are written down, so the rest can be built by someone other than me."
+    ]
+   },
+   "Skills learned": {
+    "lead": "Data modeling, in the sense of separating portable capabilities from the work that uses them.",
+    "bullets": [
+     "Designing one rubric so that a score means the same thing in every department, then building a controlled vocabulary across fifteen of them and enforcing it",
+     "Excel, Python, and automating repeated work through Claude"
+    ]
+   }
+  },
+  "p2": {
+   "What it is": {
+    "lead": "A single page that ranks every production line and part in Crew Seating by how many hours it ran over its standard time.",
+    "bullets": [
+     "Ten weeks of history sitting underneath each one, which separates a line having a bad day from a time standard that was never right to begin with.",
+     "Rework gets a panel of its own, measured against a target of zero hours, so every minute on it counts as pure loss.",
+     "A nightly job collects every shop floor scan and compares each job against its standard. The lead had been pulling the same numbers out of a database by hand for hours a day."
+    ]
+   },
+   "What I did": {
+    "lead": "A business analyst built the tool, and my job was proofing it.",
+    "bullets": [
+     "I checked each new version against the existing SQL site in Excel until the two agreed, and worked out which side was wrong wherever they didn't",
+     "I was the anchor between him and the lead, carrying what she needed to see back to him along with my own ideas for what the page should show"
+    ]
+   },
+   "Challenges": {
+    "lead": "Nobody uses a report they don't trust, and two sources disagreeing by a few tenths of an hour is enough for a lead to stop opening it.",
+    "bullets": [
+     "The checking had to be exact, and I had to be able to explain any number on the page",
+     "The other half was translation, because a lead does not describe what she wants in the shape a developer can build"
+    ]
+   },
+   "Results": {
+    "lead": "The lead now opens one page in the morning instead of working through the old site for hours.",
+    "bullets": [
+     "Its numbers were checked against the source until the two matched, so she trusts what it tells her"
+    ]
+   },
+   "Skills learned": {
+    "lead": "Checking a new build against an existing source until the numbers agree, and working out which side is wrong when they don't.",
+    "bullets": [
+     "Turning what a lead needs into something a developer can build, and reading SQL and Python well enough to check them without writing them",
+     "SYSPRO as the source system, and earned hours as the unit everything is measured in"
+    ]
+   }
+  },
+  "p3": {
+   "What it is": {
+    "lead": "A website the finance team uses to enter and lock sales forecasts for each customer group, on a rolling 24 month window with annual totals two to four years beyond it.",
+    "bullets": [
+     "The idea was to replace an Excel sheet the team had been working in, and to go a level deeper by breaking each customer group into the product classes underneath it.",
+     "It is still a prototype, and some of its blanks are deliberate, since Product Class Capacity arrives empty so the team has to enter the split by hand."
+    ]
+   },
+   "What I did": {
+    "lead": "The tool was built by someone else, and my job was proofing it, which meant going through the details and the numbers, including the time entries, and checking that they held up.",
+    "bullets": [
+     "I gave feedback on the interface across several versions while the design kept moving",
+     "When describing a layout in words wasn't landing we drafted it in Excel instead."
+    ]
+   },
+   "Skills learned": {
+    "lead": "How the company's database is structured and how to navigate it with SQL queries, which is knowledge I now use on anything that touches production data.",
+    "bullets": [
+     "Seeing what the tool was built with is why I designed the skills tracker to build itself from scripts"
+    ]
+   }
+  }
+ },
+ "dims": {
+  "s1": [
+   956,
+   769
+  ],
+  "s2": [
+   2029,
+   896
+  ],
+  "s3": [
+   1222,
+   1193
+  ],
+  "s4": [
+   1217,
+   1201
+  ],
+  "s5": [
+   1052,
+   1362
+  ],
+  "s6": [
+   1052,
+   1362
+  ]
+ },
+ "blurb": "Three projects, all of them the same problem in different clothing. A plant knows something in a form nobody can use, and somebody has to turn that into a thing a lead can actually open in the morning.",
+ "taglines": {
+  "p1": "Finding the jobs that only one person in the department can do.",
+  "p2": "One page a lead can read in the first five minutes of the day.",
+  "p3": "A hand-entered forecast sitting next to a predicted one, so neither has to be taken on faith."
+ },
+ "where": {
+  "p1": "Kaas Tailored, Mukilteo WA, Data Analyst Intern · 2026, completed",
+  "p2": "Kaas Tailored, Mukilteo WA, Data Analyst Intern · 2026, completed",
+  "p3": "Kaas Tailored, Mukilteo WA, Data Analyst Intern · 2026, prototype v8"
+ },
+ "stats": [
+  [
+   "Departments completed",
+   "15"
+  ],
+  [
+   "Leads met with",
+   "14"
+  ],
+  [
+   "Tasks defined",
+   "440"
+  ],
+  [
+   "Skill-task links",
+   "1,123"
+  ],
+  [
+   "Shared library",
+   "362"
+  ]
+ ]
+}
